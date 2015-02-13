@@ -14,6 +14,9 @@
 		BCAF39EA1A8DD3E3004FACE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCAF39E91A8DD3E3004FACE4 /* Images.xcassets */; };
 		BCAF39ED1A8DD3E3004FACE4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCAF39EB1A8DD3E3004FACE4 /* LaunchScreen.xib */; };
 		BCAF39F91A8DD3E3004FACE4 /* PlaceHolderViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAF39F81A8DD3E3004FACE4 /* PlaceHolderViewTests.m */; };
+		BCAF3A041A8DDAB5004FACE4 /* PlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAF3A031A8DDAB5004FACE4 /* PlaceholderView.m */; };
+		BCAF3A071A8DE0B6004FACE4 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = BCAF3A051A8DE0B6004FACE4 /* info.png */; };
+		BCAF3A081A8DE0B6004FACE4 /* info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCAF3A061A8DE0B6004FACE4 /* info@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		BCAF39F21A8DD3E3004FACE4 /* PlaceHolderViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaceHolderViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCAF39F71A8DD3E3004FACE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCAF39F81A8DD3E3004FACE4 /* PlaceHolderViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceHolderViewTests.m; sourceTree = "<group>"; };
+		BCAF3A021A8DDAB5004FACE4 /* PlaceholderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceholderView.h; sourceTree = "<group>"; };
+		BCAF3A031A8DDAB5004FACE4 /* PlaceholderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceholderView.m; sourceTree = "<group>"; };
+		BCAF3A051A8DE0B6004FACE4 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		BCAF3A061A8DE0B6004FACE4 /* info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +70,10 @@
 		BCAF39D01A8DD3E3004FACE4 = {
 			isa = PBXGroup;
 			children = (
+				BCAF3A051A8DE0B6004FACE4 /* info.png */,
+				BCAF3A061A8DE0B6004FACE4 /* info@2x.png */,
+				BCAF3A021A8DDAB5004FACE4 /* PlaceholderView.h */,
+				BCAF3A031A8DDAB5004FACE4 /* PlaceholderView.m */,
 				BCAF39DB1A8DD3E3004FACE4 /* PlaceHolderView */,
 				BCAF39F51A8DD3E3004FACE4 /* PlaceHolderViewTests */,
 				BCAF39DA1A8DD3E3004FACE4 /* Products */,
@@ -201,7 +212,9 @@
 			files = (
 				BCAF39E81A8DD3E3004FACE4 /* Main.storyboard in Resources */,
 				BCAF39ED1A8DD3E3004FACE4 /* LaunchScreen.xib in Resources */,
+				BCAF3A081A8DE0B6004FACE4 /* info@2x.png in Resources */,
 				BCAF39EA1A8DD3E3004FACE4 /* Images.xcassets in Resources */,
+				BCAF3A071A8DE0B6004FACE4 /* info.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +234,7 @@
 			files = (
 				BCAF39E51A8DD3E3004FACE4 /* ViewController.m in Sources */,
 				BCAF39E21A8DD3E3004FACE4 /* AppDelegate.m in Sources */,
+				BCAF3A041A8DDAB5004FACE4 /* PlaceholderView.m in Sources */,
 				BCAF39DF1A8DD3E3004FACE4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PlaceHolderView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PlaceHolderView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
