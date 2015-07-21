@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC18C4001B54B7180052972A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC18C3FF1B54B7180052972A /* main.m */; };
+		BC18C4031B54B7180052972A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC18C4021B54B7180052972A /* AppDelegate.m */; };
+		BC18C4061B54B7180052972A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC18C4051B54B7180052972A /* ViewController.m */; };
+		BC18C4091B54B7180052972A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC18C4071B54B7180052972A /* Main.storyboard */; };
+		BC18C40B1B54B7180052972A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC18C40A1B54B7180052972A /* Images.xcassets */; };
+		BC18C40E1B54B7180052972A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC18C40C1B54B7180052972A /* LaunchScreen.xib */; };
+		BC18C41A1B54B7180052972A /* PlaceHolderViewSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC18C4191B54B7180052972A /* PlaceHolderViewSampleTests.m */; };
+		BC18C4271B54B77B0052972A /* PlaceHolderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC18C4261B54B77B0052972A /* PlaceHolderView.m */; };
+		BC18C4291B54B7980052972A /* PlaceHolderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC18C4281B54B7980052972A /* PlaceHolderView.xib */; };
+		BC7C8F6A1B54BFB200165746 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = BC7C8F681B54BFB200165746 /* info.png */; };
+		BC7C8F6B1B54BFB200165746 /* info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC7C8F691B54BFB200165746 /* info@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC18C4141B54B7180052972A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC18C3F21B54B7180052972A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC18C3F91B54B7180052972A;
+			remoteInfo = PlaceHolderViewSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC18C3FA1B54B7180052972A /* PlaceHolderViewSample_AutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaceHolderViewSample_AutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC18C3FE1B54B7180052972A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC18C3FF1B54B7180052972A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC18C4011B54B7180052972A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BC18C4021B54B7180052972A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BC18C4041B54B7180052972A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BC18C4051B54B7180052972A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BC18C4081B54B7180052972A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC18C40A1B54B7180052972A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BC18C40D1B54B7180052972A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BC18C4131B54B7180052972A /* PlaceHolderViewSample_AutoLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaceHolderViewSample_AutoLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC18C4181B54B7180052972A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC18C4191B54B7180052972A /* PlaceHolderViewSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceHolderViewSampleTests.m; sourceTree = "<group>"; };
+		BC18C4251B54B77B0052972A /* PlaceHolderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaceHolderView.h; path = PlaceHolderView/PlaceHolderView.h; sourceTree = "<group>"; };
+		BC18C4261B54B77B0052972A /* PlaceHolderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlaceHolderView.m; path = PlaceHolderView/PlaceHolderView.m; sourceTree = "<group>"; };
+		BC18C4281B54B7980052972A /* PlaceHolderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceHolderView.xib; sourceTree = "<group>"; };
+		BC7C8F681B54BFB200165746 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		BC7C8F691B54BFB200165746 /* info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC18C3F71B54B7180052972A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC18C4101B54B7180052972A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC18C3F11B54B7180052972A = {
+			isa = PBXGroup;
+			children = (
+				BC18C3FC1B54B7180052972A /* PlaceHolderViewSample */,
+				BC18C4161B54B7180052972A /* PlaceHolderViewSampleTests */,
+				BC18C3FB1B54B7180052972A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC18C3FB1B54B7180052972A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC18C3FA1B54B7180052972A /* PlaceHolderViewSample_AutoLayout.app */,
+				BC18C4131B54B7180052972A /* PlaceHolderViewSample_AutoLayoutTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC18C3FC1B54B7180052972A /* PlaceHolderViewSample */ = {
+			isa = PBXGroup;
+			children = (
+				BC18C4241B54B7340052972A /* PlaceHolderView */,
+				BC18C4011B54B7180052972A /* AppDelegate.h */,
+				BC18C4021B54B7180052972A /* AppDelegate.m */,
+				BC18C4041B54B7180052972A /* ViewController.h */,
+				BC18C4051B54B7180052972A /* ViewController.m */,
+				BC18C4071B54B7180052972A /* Main.storyboard */,
+				BC18C40A1B54B7180052972A /* Images.xcassets */,
+				BC18C40C1B54B7180052972A /* LaunchScreen.xib */,
+				BC18C3FD1B54B7180052972A /* Supporting Files */,
+			);
+			path = PlaceHolderViewSample;
+			sourceTree = "<group>";
+		};
+		BC18C3FD1B54B7180052972A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC18C3FE1B54B7180052972A /* Info.plist */,
+				BC18C3FF1B54B7180052972A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC18C4161B54B7180052972A /* PlaceHolderViewSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC18C4191B54B7180052972A /* PlaceHolderViewSampleTests.m */,
+				BC18C4171B54B7180052972A /* Supporting Files */,
+			);
+			path = PlaceHolderViewSampleTests;
+			sourceTree = "<group>";
+		};
+		BC18C4171B54B7180052972A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC18C4181B54B7180052972A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC18C4241B54B7340052972A /* PlaceHolderView */ = {
+			isa = PBXGroup;
+			children = (
+				BC7C8F681B54BFB200165746 /* info.png */,
+				BC7C8F691B54BFB200165746 /* info@2x.png */,
+				BC18C4251B54B77B0052972A /* PlaceHolderView.h */,
+				BC18C4261B54B77B0052972A /* PlaceHolderView.m */,
+				BC18C4281B54B7980052972A /* PlaceHolderView.xib */,
+			);
+			name = PlaceHolderView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC18C3F91B54B7180052972A /* PlaceHolderViewSample_AutoLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC18C41D1B54B7180052972A /* Build configuration list for PBXNativeTarget "PlaceHolderViewSample_AutoLayout" */;
+			buildPhases = (
+				BC18C3F61B54B7180052972A /* Sources */,
+				BC18C3F71B54B7180052972A /* Frameworks */,
+				BC18C3F81B54B7180052972A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlaceHolderViewSample_AutoLayout;
+			productName = PlaceHolderViewSample;
+			productReference = BC18C3FA1B54B7180052972A /* PlaceHolderViewSample_AutoLayout.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC18C4121B54B7180052972A /* PlaceHolderViewSample_AutoLayoutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC18C4201B54B7180052972A /* Build configuration list for PBXNativeTarget "PlaceHolderViewSample_AutoLayoutTests" */;
+			buildPhases = (
+				BC18C40F1B54B7180052972A /* Sources */,
+				BC18C4101B54B7180052972A /* Frameworks */,
+				BC18C4111B54B7180052972A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC18C4151B54B7180052972A /* PBXTargetDependency */,
+			);
+			name = PlaceHolderViewSample_AutoLayoutTests;
+			productName = PlaceHolderViewSampleTests;
+			productReference = BC18C4131B54B7180052972A /* PlaceHolderViewSample_AutoLayoutTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC18C3F21B54B7180052972A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Hai Long";
+				TargetAttributes = {
+					BC18C3F91B54B7180052972A = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					BC18C4121B54B7180052972A = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = BC18C3F91B54B7180052972A;
+					};
+				};
+			};
+			buildConfigurationList = BC18C3F51B54B7180052972A /* Build configuration list for PBXProject "PlaceHolderViewSample_AutoLayout" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC18C3F11B54B7180052972A;
+			productRefGroup = BC18C3FB1B54B7180052972A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC18C3F91B54B7180052972A /* PlaceHolderViewSample_AutoLayout */,
+				BC18C4121B54B7180052972A /* PlaceHolderViewSample_AutoLayoutTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC18C3F81B54B7180052972A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC7C8F6B1B54BFB200165746 /* info@2x.png in Resources */,
+				BC18C4091B54B7180052972A /* Main.storyboard in Resources */,
+				BC7C8F6A1B54BFB200165746 /* info.png in Resources */,
+				BC18C40E1B54B7180052972A /* LaunchScreen.xib in Resources */,
+				BC18C4291B54B7980052972A /* PlaceHolderView.xib in Resources */,
+				BC18C40B1B54B7180052972A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC18C4111B54B7180052972A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC18C3F61B54B7180052972A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC18C4061B54B7180052972A /* ViewController.m in Sources */,
+				BC18C4031B54B7180052972A /* AppDelegate.m in Sources */,
+				BC18C4271B54B77B0052972A /* PlaceHolderView.m in Sources */,
+				BC18C4001B54B7180052972A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC18C40F1B54B7180052972A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC18C41A1B54B7180052972A /* PlaceHolderViewSampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC18C4151B54B7180052972A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC18C3F91B54B7180052972A /* PlaceHolderViewSample_AutoLayout */;
+			targetProxy = BC18C4141B54B7180052972A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC18C4071B54B7180052972A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC18C4081B54B7180052972A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC18C40C1B54B7180052972A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC18C40D1B54B7180052972A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC18C41B1B54B7180052972A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chen DeQiang (RGF8N94GE6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chen DeQiang (RGF8N94GE6)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "e532a97d-f4ce-4868-bec0-5fe370c3dc9a";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BC18C41C1B54B7180052972A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chen DeQiang (RGF8N94GE6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chen DeQiang (RGF8N94GE6)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "e532a97d-f4ce-4868-bec0-5fe370c3dc9a";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC18C41E1B54B7180052972A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chen DeQiang (RGF8N94GE6)";
+				INFOPLIST_FILE = PlaceHolderViewSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = PlaceHolderViewSample_AutoLayout;
+			};
+			name = Debug;
+		};
+		BC18C41F1B54B7180052972A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chen DeQiang (RGF8N94GE6)";
+				INFOPLIST_FILE = PlaceHolderViewSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = PlaceHolderViewSample_AutoLayout;
+			};
+			name = Release;
+		};
+		BC18C4211B54B7180052972A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chen DeQiang (RGF8N94GE6)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PlaceHolderViewSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = PlaceHolderViewSample_AutoLayoutTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlaceHolderViewSample.app/PlaceHolderViewSample";
+			};
+			name = Debug;
+		};
+		BC18C4221B54B7180052972A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chen DeQiang (RGF8N94GE6)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PlaceHolderViewSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = PlaceHolderViewSample_AutoLayoutTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlaceHolderViewSample.app/PlaceHolderViewSample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC18C3F51B54B7180052972A /* Build configuration list for PBXProject "PlaceHolderViewSample_AutoLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC18C41B1B54B7180052972A /* Debug */,
+				BC18C41C1B54B7180052972A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC18C41D1B54B7180052972A /* Build configuration list for PBXNativeTarget "PlaceHolderViewSample_AutoLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC18C41E1B54B7180052972A /* Debug */,
+				BC18C41F1B54B7180052972A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC18C4201B54B7180052972A /* Build configuration list for PBXNativeTarget "PlaceHolderViewSample_AutoLayoutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC18C4211B54B7180052972A /* Debug */,
+				BC18C4221B54B7180052972A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC18C3F21B54B7180052972A /* Project object */;
+}
