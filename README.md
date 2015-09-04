@@ -12,7 +12,7 @@ When you're working on a new app, sometimes it's easier to start with dummy view
 
     [self.view addSubview:placeholderView];
 ```
-### set processing and hidden
+### set processing and hide
 ```Objective-C
 - (void)webViewDidStartLoad:(UIWebView *)webView{
     placeholderView.isInProcess = YES;
