@@ -3,7 +3,7 @@
 When you're working on a new app, sometimes it's easier to start with dummy views and slowly replace them as you implement their functionality. Rather than use a simple UIView for this, PlaceholderView gives you a better looking placeholder view that shows its dimensions and an optional title.
 
 ## Usage
-### init
+### initialization
 ```Objective-C
     placeholderView = [[PlaceholderView alloc]initWithFrame:self.webView.frame];
 
@@ -12,7 +12,7 @@ When you're working on a new app, sometimes it's easier to start with dummy view
 
     [self.view addSubview:placeholderView];
 ```
-### set processing and hide
+### setting processing and hide
 ```Objective-C
 - (void)webViewDidStartLoad:(UIWebView *)webView{
     placeholderView.isInProcess = YES;
