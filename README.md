@@ -25,7 +25,7 @@ iOS 8.0 or higher
 3 . Enjoy the code bellow. It's very simple, right? :)
 
 ```Swift
-override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
     
         placeholderView.imgOfIconImgView = UIImage(named: "info")
@@ -63,7 +63,7 @@ Use these methods to control the status of view
  //The activity indicator will start animating, info icon and message label will be hiden
  func startAnimating()
  //Oppositely
-func stopAnimating()
+ func stopAnimating()
 ```
 
 ## License
