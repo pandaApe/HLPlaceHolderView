@@ -24,7 +24,7 @@ class HLPlaceholderView: UIView {
     private var target:AnyObject!
     private var action:Selector!
     
-    var indicatorViewStyle:UIActivityIndicatorViewStyle!{
+    var indicatorViewStyle:UIActivityIndicatorViewStyle{
         
         set{
             self.activityIndicator.activityIndicatorViewStyle  = newValue
@@ -43,7 +43,7 @@ class HLPlaceholderView: UIView {
         }
     }
     
-    var iconImg:UIImage?{
+    var imgOfIconImgView:UIImage?{
         set{
             self.iconImgView.image = newValue
         }
@@ -52,7 +52,7 @@ class HLPlaceholderView: UIView {
         }
     }
     
-    var sizeOfIconImageView:CGSize!{
+    var sizeOfIconImageView:CGSize{
         set{
             widthConstraintOfIcon.constant = newValue.width
             heightConstraintOfIcon.constant = newValue.height
@@ -62,12 +62,20 @@ class HLPlaceholderView: UIView {
         }
     }
     
-    var msgTextFont:UIFont!{
+    var fontOfMsgText:UIFont{
         set{
             self.msgLabel.font = newValue
         }
         get{
             return self.msgLabel.font
+        }
+    }
+    var backgrountColorOfMsgLabel:UIColor?{
+        set{
+            self.msgLabel.backgroundColor = newValue
+        }
+        get{
+            return self.msgLabel.backgroundColor
         }
     }
     

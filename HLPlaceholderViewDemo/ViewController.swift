@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        placeholderView.iconImg = UIImage(named: "info")
+        placeholderView.imgOfIconImgView = UIImage(named: "info")
         placeholderView.addPlaceholderTapTarget(self, andAction: "loading")
         placeholderView.msgText = "No data found"
         placeholderView.sizeOfIconImageView = CGSizeMake(60, 60)

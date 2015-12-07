@@ -1,34 +1,63 @@
-# Place Holder View
-## What it can be used for?
+# HLPlaceholderView
+
 When you're working on a new app, sometimes it's easier to start with dummy views and slowly replace them as you implement their functionality. Rather than use a simple UIView for this, PlaceholderView gives you a better looking placeholder view that shows its dimensions and an optional title.
 
-## Usage
-### initialization
-```Objective-C
-    placeholderView = [[PlaceholderView alloc]initWithFrame:self.webView.frame];
+## Requirements
+Xcode 7 or higher
+iOS 8.0 or higher
 
-    [placeholderView setPlaceholderImage:[UIImage imageNamed:@"info"] withImageSize:CGSizeMake(60, 60) andMessage:@"Sorry, Can not connect to server, please check network configuration"];
-    [placeholderView addPlaceholderTapTarget:self andAction:@selector(reloadWeb)];
+## Manual Installation
+1. Drag the code itself (HLPlaceholderView.swift file) to your project. 
+2. Make sure that the file is added to the Target membership.
 
-    [self.view addSubview:placeholderView];
+## Example Usage
+1. Drag an UIView to your Storyboard, and set Custom class as HLPlaceholderView.
+2. ctrl+drag the UIView reference into ViewController.
+3. Enjoy the code bellow.
+
+```Swift
+override func viewDidLoad() {
+        super.viewDidLoad()
+    
+        placeholderView.imgOfIconImgView = UIImage(named: "info")
+        placeholderView.addPlaceholderTapTarget(self, andAction: "loading")
+        placeholderView.msgText = "No data found"
+        placeholderView.sizeOfIconImageView = CGSizeMake(60, 60)
+        
+    }
+    
+    func loading(){
+        NSTimer.scheduledTimerWithTimeInterval( 1, target: placeholderView, selector: "stopAnimating", userInfo: nil, repeats: false)
+        print("loading...")
+    }
 ```
-### setting processing and hide
-```Objective-C
-- (void)webViewDidStartLoad:(UIWebView *)webView{
-    placeholderView.isInProcess = YES;
-}
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView{
-    placeholderView.isInProcess = NO;
-    placeholderView.hidden = YES;
-}
 
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
-    placeholderView.isInProcess = NO;
-    placeholderView.hidden = NO;
-}
 
+## Customization
+
+You can customize the following properties of HLPlaceholderView:
+``` swift
+* var indicatorViewStyle:UIActivityIndicatorViewStyle!
+* var msgText:String?
+* var imgOfIconImgView:UIImage?
+* var sizeOfIconImageView:CGSize!
+* var fontOfMsgText:UIFont!
+* var backgrountColorOfMsgLabel:UIColor?
 ```
+
+Use this method to add handing tapping info imageview action
+```swift
+    func addPlaceholderTapTarget(target:AnyObject!, andAction action:Selector)
+```
+
+Use these methods to control the status of view
+```swift
+func startAnimating() //The activity indicator will start animating, info icon and message label will be hiden
+//Oppositely
+func stopAnimating()
+```
+
 ## License
 PlaceHolderView is released under the MIT license.  
 See LICENSE for details.
