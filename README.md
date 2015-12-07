@@ -22,7 +22,7 @@ iOS 8.0 or higher
 
 ![](https://github.com/pandaApe/HLPlaceHolderView/blob/master/DemoScreenshots/2 .png?raw=true)
 
-3. Enjoy the code bellow.
+3. Enjoy the code bellow. It's very simple, right? :)
 
 ```Swift
 override func viewDidLoad() {
