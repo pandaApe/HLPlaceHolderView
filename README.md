@@ -2,7 +2,10 @@
 
 When you're working on a new app, sometimes it's easier to start with dummy views and slowly replace them as you implement their functionality. Rather than use a simple UIView for this, PlaceholderView gives you a better looking placeholder view that shows its dimensions and an optional title.
 
+![](https://github.com/pandaApe/HLPlaceHolderView/master/DemoScreenshots/3.gif)
+
 ## Requirements
+
 Xcode 7 or higher
 iOS 8.0 or higher
 
@@ -12,7 +15,11 @@ iOS 8.0 or higher
 
 ## Example Usage
 1. Drag an UIView to your Storyboard, and set Custom class as HLPlaceholderView.
+![](https://github.com/pandaApe/HLPlaceHolderView/master/DemoScreenshots/1.png)
+
 2. ctrl+drag the UIView reference into ViewController.
+![](https://github.com/pandaApe/HLPlaceHolderView/master/DemoScreenshots/2.png)
+
 3. Enjoy the code bellow.
 
 ```Swift
@@ -32,29 +39,28 @@ override func viewDidLoad() {
     }
 ```
 
-
-
 ## Customization
 
 You can customize the following properties of HLPlaceholderView:
 ``` swift
-* var indicatorViewStyle:UIActivityIndicatorViewStyle!
-* var msgText:String?
-* var imgOfIconImgView:UIImage?
-* var sizeOfIconImageView:CGSize!
-* var fontOfMsgText:UIFont!
-* var backgrountColorOfMsgLabel:UIColor?
+ var indicatorViewStyle:UIActivityIndicatorViewStyle!
+ var msgText:String?
+ var imgOfIconImgView:UIImage?
+ var sizeOfIconImageView:CGSize!
+ var fontOfMsgText:UIFont!
+ var backgrountColorOfMsgLabel:UIColor?
 ```
 
 Use this method to add handing tapping info imageview action
 ```swift
-    func addPlaceholderTapTarget(target:AnyObject!, andAction action:Selector)
+ func addPlaceholderTapTarget(target:AnyObject!, andAction action:Selector)
 ```
 
 Use these methods to control the status of view
 ```swift
-func startAnimating() //The activity indicator will start animating, info icon and message label will be hiden
-//Oppositely
+ //The activity indicator will start animating, info icon and message label will be hiden
+ func startAnimating()
+ //Oppositely
 func stopAnimating()
 ```
 
