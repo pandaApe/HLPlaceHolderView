@@ -20,7 +20,7 @@ iOS 8.0 or higher
 
 2. ctrl+drag the UIView reference into ViewController.
 
-![](https://github.com/pandaApe/HLPlaceHolderView/blob/master/DemoScreenshots/2.png?raw=true)
+![](https://github.com/pandaApe/HLPlaceHolderView/blob/master/DemoScreenshots/2 .png?raw=true)
 
 3. Enjoy the code bellow.
 
