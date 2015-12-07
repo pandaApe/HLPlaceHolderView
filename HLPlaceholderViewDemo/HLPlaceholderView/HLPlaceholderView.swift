@@ -80,12 +80,15 @@ class HLPlaceholderView: UIView {
     private func setUpViews(){
         
         iconImgView = UIImageView()
-        iconImgView.translatesAutoresizingMaskIntoConstraints = false//setTranslatesAutoresizingMaskIntoConstraints(false)
+        iconImgView.translatesAutoresizingMaskIntoConstraints = false
+        
         activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
         activityIndicator.hidesWhenStopped = true
+        
         msgLabel = UILabel()
         msgLabel.numberOfLines = 0
+        msgLabel.textAlignment = .Center
         msgLabel.translatesAutoresizingMaskIntoConstraints = false
         
         self.addSubview(iconImgView)
@@ -96,22 +99,22 @@ class HLPlaceholderView: UIView {
     private func setUpConstraints(){
         
         let viewsDic = ["iconImgView":iconImgView,"activityIndicator":activityIndicator,"msgLabel":msgLabel]
-                
+        
         widthConstraintOfIcon = NSLayoutConstraint.constraintsWithVisualFormat("[iconImgView(60)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views:viewsDic ).first!
         
         heightConstraintOfIcon = NSLayoutConstraint.constraintsWithVisualFormat("V:[iconImgView(60)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views:viewsDic ).first!
         
-        let centerXConstraintOfIcon = NSLayoutConstraint(item: iconImgView, attribute: NSLayoutAttribute.CenterX, relatedBy: .Equal, toItem: self, attribute: .CenterX, multiplier: 1, constant: 0)
+        let centerXConstraintOfIcon = NSLayoutConstraint(item: iconImgView, attribute: .CenterX, relatedBy: .Equal, toItem: self, attribute: .CenterX, multiplier: 1, constant: 0)
         
-        let centerYConstraintOfIcon = NSLayoutConstraint(item: iconImgView, attribute: NSLayoutAttribute.Bottom, relatedBy: .Equal, toItem: self, attribute: .CenterY, multiplier: 1, constant: -20)
+        let centerYConstraintOfIcon = NSLayoutConstraint(item: iconImgView, attribute: .Bottom, relatedBy: .Equal, toItem: self, attribute: .CenterY, multiplier: 1, constant: -20)
         
-        let centerXConstraintOfIndicator = NSLayoutConstraint(item: activityIndicator, attribute: NSLayoutAttribute.CenterX, relatedBy: .Equal, toItem: self, attribute: .CenterX, multiplier: 1, constant: 0)
+        let centerXConstraintOfIndicator = NSLayoutConstraint(item: activityIndicator, attribute: .CenterX, relatedBy: .Equal, toItem: self, attribute: .CenterX, multiplier: 1, constant: 0)
         
-        let centerYConstraintOfIndicator = NSLayoutConstraint(item: activityIndicator, attribute: NSLayoutAttribute.CenterY, relatedBy: .Equal, toItem: self, attribute: .CenterY, multiplier: 1, constant: 0)
+        let centerYConstraintOfIndicator = NSLayoutConstraint(item: activityIndicator, attribute: .CenterY, relatedBy: .Equal, toItem: self, attribute: .CenterY, multiplier: 1, constant: -20)
         
-        let verticalConstraintOfMsgLabel = NSLayoutConstraint(item: msgLabel, attribute: NSLayoutAttribute.Top, relatedBy: .Equal, toItem: iconImgView, attribute: NSLayoutAttribute.Bottom, multiplier: 1, constant: 10)
-        let centerXConstraintOfMsgLabel = NSLayoutConstraint(item: msgLabel, attribute: NSLayoutAttribute.CenterX, relatedBy: .Equal, toItem: self, attribute: .CenterX, multiplier: 1, constant: 0)
-        let widthConstraintOfMsgLabel = NSLayoutConstraint(item: msgLabel, attribute: NSLayoutAttribute.Width, relatedBy: .Equal, toItem: self, attribute: .Width, multiplier: 3.5/5.0, constant: 0)
+        let verticalConstraintOfMsgLabel = NSLayoutConstraint(item: msgLabel, attribute: .Top, relatedBy: .Equal, toItem: iconImgView, attribute: .Bottom, multiplier: 1, constant: 10)
+        let centerXConstraintOfMsgLabel = NSLayoutConstraint(item: msgLabel, attribute: .CenterX, relatedBy: .Equal, toItem: self, attribute: .CenterX, multiplier: 1, constant: 0)
+        let widthConstraintOfMsgLabel = NSLayoutConstraint(item: msgLabel, attribute: .Width, relatedBy: .Equal, toItem: self, attribute: .Width, multiplier: 3.5/5.0, constant: 0)
         
         NSLayoutConstraint.activateConstraints([widthConstraintOfIcon,heightConstraintOfIcon,centerXConstraintOfIcon,centerYConstraintOfIcon,verticalConstraintOfMsgLabel,centerXConstraintOfMsgLabel,widthConstraintOfMsgLabel,centerXConstraintOfIndicator,centerYConstraintOfIndicator])
     }
