@@ -2,7 +2,7 @@
 
 When you're working on a new app, sometimes it's easier to start with dummy views and slowly replace them as you implement their functionality. Rather than use a simple UIView for this, PlaceholderView gives you a better looking placeholder view that shows its dimensions and an optional title.
 
-![](https://github.com/pandaApe/HLPlaceHolderView/tree/master/DemoScreenshots/3.gif)
+![](https://github.com/pandaApe/HLPlaceHolderView/blob/master/DemoScreenshots/3.gif?raw=true)
 
 ## Requirements
 
@@ -16,11 +16,11 @@ iOS 8.0 or higher
 ## Example Usage
 1. Drag an UIView to your Storyboard, and set Custom class as HLPlaceholderView.
 
-![](https://github.com/pandaApe/HLPlaceHolderView/tree/master/DemoScreenshots/1.png)
+![](https://github.com/pandaApe/HLPlaceHolderView/blob/master/DemoScreenshots/1.png?raw=true)
 
 2. ctrl+drag the UIView reference into ViewController.
 
-![](https://github.com/pandaApe/HLPlaceHolderView/tree/master/DemoScreenshots/2.png)
+![](https://github.com/pandaApe/HLPlaceHolderView/blob/master/DemoScreenshots/2.png?raw=true)
 
 3. Enjoy the code bellow.
 
