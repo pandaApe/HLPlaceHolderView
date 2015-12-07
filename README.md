@@ -14,15 +14,15 @@ iOS 8.0 or higher
 2. Make sure that the file is added to the Target membership.
 
 ## Example Usage
-1. Drag an UIView to your Storyboard, and set Custom class as HLPlaceholderView.
+1 . Drag an UIView to your Storyboard, and set Custom class as HLPlaceholderView.
 
 ![](https://github.com/pandaApe/HLPlaceHolderView/blob/master/DemoScreenshots/1.png?raw=true)
 
-2. ctrl+drag the UIView reference into ViewController.
+2 . ctrl+drag the UIView reference into ViewController.
 
 ![](https://github.com/pandaApe/HLPlaceHolderView/blob/master/DemoScreenshots/2 .png?raw=true)
 
-3. Enjoy the code bellow. It's very simple, right? :)
+3 . Enjoy the code bellow. It's very simple, right? :)
 
 ```Swift
 override func viewDidLoad() {
