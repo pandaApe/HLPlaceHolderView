@@ -7,7 +7,8 @@ When you're working on a new app, sometimes it's easier to start with dummy view
 
 ## Requirements
 
-Xcode 7 or higher
+Xcode 7.3 
+Swift 2.2
 iOS 8.0 or higher
 
 ## Manual Installation
