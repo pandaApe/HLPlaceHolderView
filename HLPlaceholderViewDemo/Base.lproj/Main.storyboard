@@ -1,43 +1,78 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tPg-N9-LFY">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Navigation Controller-->
+        <scene sceneID="aDh-BE-ILL">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="HLPlaceholderViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="tPg-N9-LFY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1nk-hm-izo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GbJ-hF-JVL" kind="relationship" relationship="rootViewController" id="gGs-uh-ULN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YMT-1a-WHs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2826" y="142"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="MPP-z3-Rty">
+            <objects>
+                <viewController id="GbJ-hF-JVL" customClass="ViewController" customModule="HLPlaceholderViewDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="zGf-HY-DhT"/>
+                        <viewControllerLayoutGuide type="bottom" id="at8-Jf-IFZ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="1ZF-fz-0qm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3P4-EO-xEz" customClass="HLPlaceholderView" customModule="HLPlaceholderViewDemo" customModuleProvider="target">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C4w-vI-gTq">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <animations/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xt8-Id-YmH" customClass="HLPlaceholderView" customModule="HLPlaceholderViewDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3P4-EO-xEz" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Aad-zK-awH"/>
-                            <constraint firstItem="3P4-EO-xEz" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="BPF-Vp-t97"/>
-                            <constraint firstItem="3P4-EO-xEz" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="JHH-Jk-XvZ"/>
-                            <constraint firstItem="3P4-EO-xEz" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" id="tWr-YH-3zd"/>
+                            <constraint firstItem="C4w-vI-gTq" firstAttribute="leading" secondItem="1ZF-fz-0qm" secondAttribute="leading" id="1c2-ve-O8L"/>
+                            <constraint firstItem="Xt8-Id-YmH" firstAttribute="top" secondItem="zGf-HY-DhT" secondAttribute="bottom" id="1r3-1n-N94"/>
+                            <constraint firstItem="Xt8-Id-YmH" firstAttribute="leading" secondItem="1ZF-fz-0qm" secondAttribute="leading" id="Lv5-hc-20U"/>
+                            <constraint firstItem="Xt8-Id-YmH" firstAttribute="height" secondItem="1ZF-fz-0qm" secondAttribute="height" id="T5F-2V-6W6"/>
+                            <constraint firstItem="at8-Jf-IFZ" firstAttribute="top" secondItem="C4w-vI-gTq" secondAttribute="bottom" id="Y0a-MT-GBz"/>
+                            <constraint firstItem="C4w-vI-gTq" firstAttribute="width" secondItem="1ZF-fz-0qm" secondAttribute="width" id="ezs-EW-h20"/>
+                            <constraint firstItem="C4w-vI-gTq" firstAttribute="height" secondItem="1ZF-fz-0qm" secondAttribute="height" id="hcG-nq-AAF"/>
+                            <constraint firstItem="Xt8-Id-YmH" firstAttribute="width" secondItem="1ZF-fz-0qm" secondAttribute="width" id="ogG-aw-Jw7"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="gYh-r8-ga9">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="MdJ-as-yJd">
+                            <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="LP3-Q8-Cbt">
+                                <rect key="frame" x="531" y="6" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchValueChanged:" destination="GbJ-hF-JVL" eventType="valueChanged" id="Tmv-QQ-g7t"/>
+                                </connections>
+                            </switch>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="placeholderView" destination="3P4-EO-xEz" id="LzM-2z-Ci0"/>
+                        <outlet property="placeholderView" destination="Xt8-Id-YmH" id="oEz-gW-sxQ"/>
+                        <outlet property="webView" destination="C4w-vI-gTq" id="xKe-aJ-wxO"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gjx-c4-DKt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-2069" y="115"/>
         </scene>
     </scenes>
 </document>

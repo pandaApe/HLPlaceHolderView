@@ -128,6 +128,7 @@ class HLPlaceholderView: UIView {
     }
     
     func startAnimating(){
+        self.hidden = false
         msgLabel.hidden = true
         iconImgView.hidden = true
         activityIndicator.startAnimating()
@@ -144,7 +145,7 @@ class HLPlaceholderView: UIView {
         self.target = target
         self.action = action
         
-        tapGesture = UITapGestureRecognizer(target: self, action: "handleTapAction")
+        tapGesture = UITapGestureRecognizer(target: self, action: #selector(HLPlaceholderView.handleTapAction))
         
         if tapGesture != nil{
             iconImgView.removeGestureRecognizer(tapGesture!)
